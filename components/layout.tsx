@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { ReactNode } from "react";
 
-const Layout = (children: { children: ReactNode }) => {
+const Layout = ({ children }: { children?: ReactNode }) => {
   return (
     <div>
       <Head>
@@ -25,7 +25,7 @@ const Layout = (children: { children: ReactNode }) => {
         `}</style>
       </Head>
       <body>{children}</body>
-      <footer> this is footer..</footer>
+      <footer></footer>
     </div>
   );
 };
